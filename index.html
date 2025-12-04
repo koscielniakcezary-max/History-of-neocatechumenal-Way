@@ -4,22 +4,58 @@
     <meta charset="UTF-8">
     <title>Neocatechumenal Way</title>
     <style>
-      body {
+      html, body {
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
+        height: 100%;
+        font-family: 'Georgia', serif;
+        background-color: #f8f8f8;
+      }
+      header {
+        background-image: url('banner.jpg'); /* Replace with actual banner image URL */
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      }
+      header h1 {
+        font-size: 2.5em;
+        margin: 0;
+      }
+      main {
+        padding: 20px;
         text-align: center;
       }
       iframe {
+        width: 100%;
+        height: 80vh;
         border: none;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9em;
       }
     </style>
   </head>
   <body>
-    <h2>History of Neocatechumenal Way</h2>
-    <iframe src="https://storymaps.arcgis.com/stories/1c67a88d25f5482888060ddcb6b7b2c5"
-            width="100%" height="500px" allowfullscreen allow="geolocation">
-    </iframe>
+    <header>
+      <h1>Neocatechumenal Way</h1>
+    </header>
+    <main>
+      <h2>History of the Neocatechumenal Way</h2>
+      <p>Explore the global journey of Christian formation through this interactive StoryMap.</p>
+      <iframe src="https://storymaps.arcgis.com/stories/1c67a88d25f5482888060ddcb6b7b2c5" allowfullscreen allow="geolocation"></iframe>
+    </main>
+    <footer>
+      &copy; 2025 Neocatechumenal Way Project – Created by Cezar Kościelniak
+    </footer>
   </body>
 </html>
 
